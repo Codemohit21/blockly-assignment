@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #310c66;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.header p {
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+/* Main layout */
+.main {
+  display: flex;
+  height: calc(100vh - 120px);
+  padding: 15px;
+  gap: 15px;
+}
+
+/* Blockly area */
+#blocklyDiv {
+  width: 70%;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  background: white;
+}
+
+/* Right panel */
+.right-panel {
+  width: 30%;
+  background: rgba(231, 233, 228, 0.95);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+.right-panel h3 {
+  margin: 10px 0 6px;
+  font-weight: 600;
+}
+
+/* Code preview */
+pre {
+  background: #212137;
+  color: #58d66f;
+  padding: 12px;
+  border-radius: 12px;
+  height: 160px;
+  overflow: auto;
+  font-size: 13px;
+}
+
+/* Output */
+#output {
+  background: #c4c4c8;
+  border-radius: 12px;
+  min-height: 80px;
+  padding: 10px;
+  font-size: 14px;
+  border-left: 5px solid #3a3a3b;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Button colors */
+button.gen {
+  background: #667eea;
+  color: white;
+}
+
+button.run {
+  background: #4caf50;
+  color: white;
+}
+
+button.clear {
+  background: #e53935;
+  color: rgb(247, 246, 246);
+}
+
+.buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.buttons button:active {
+  transform: scale(0.97);
+}
